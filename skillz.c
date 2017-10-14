@@ -23,7 +23,7 @@ void print_list(struct node * one)
   printf("END\n");
 }
 
-//create a new node pointer, initialize its contents, realign pointers
+//create a new node pointer, initialize its contents, return new node pointer
 struct node * insert_front (struct node * one, int item)
 {
   struct node * update;
@@ -34,7 +34,7 @@ struct node * insert_front (struct node * one, int item)
   return update;
 }
 
-//use a temp struct node pointer to store next node before freeing current node
+//use a temp pointer to store next node before freeing node. continue until null
 struct node * free_list(struct node * one)
 {
   struct node * two;
